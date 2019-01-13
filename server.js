@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const cors = require('cors');
-const {CLIENT_ORIGIN} = require('./config');
+const {CLIENT_ORIGIN, PORT} = require('./config');
 
 app.use(
     cors({
@@ -10,11 +10,15 @@ app.use(
     })
 );
 
-const PORT = process.env.PORT || 3000;
+app.get('/money', (req,res) => {
+    res.json({Hozefa: message})
+})
 
 app.get('/api/*', (req, res) => {
   res.json({ok: true});
 });
+
+
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 
