@@ -1,0 +1,11 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: TVRw+PnET+pRcC7jyO+2sGfDZ3C0m3bqwoxBfs32nUb1wIgccOBB5Fc+RR8l6yvmMAbqzWh6H/bEto4LTLtHUkRQwmnvrH8v10jsicpvr0ZFPy0p/xIIFmBQFR9yCxZ64KRZ9Ma4BW16UZiLF3mocJ99WQ6/Trf33WSrqjEyK2V8OF/cNGqOCNwlAgbpytPAu7/Ffne+nq/+pcf+ImKvFh8+/GujUtIF/Tp+Ubpf3ejlkZDDuu7AJNJ+9g14MnC9Jwfa8dFsDBhM882AJ+hm8qnld27ev25jeD5fcmrY943sIOp/TYxdVj8aKnj7pi8DT9Z15MKZbJqy+ZciiVQ2aoo1+g80qWX0TAU0HjG7LQGV1/SdgIo/aUPYhUQ6dxha3lI7+oWUpgoOFFTqC6b4QqVOMg/WUN+vSeA6KNsXxJinZHp2lOwrIUjCi7Ux5MyB516y8sPksnAZzdMAIyoGhQxUCHXcxQZYFnRjVMlQaV1e6bkMhHdoFNhyi/wqKja4HG/LfQtRc++pU4B8zVPZg7NHFZPbgcunDR5XCPAX0NPVy+myhyyYUSAS+5CSCvkKq/CQQFLBxQjOoMX+kcVASaBfg9G7x0GoDbSAVkiVC+vCAnc7oYi13l+GXJy/X+83v3my8mKoy0qgFweaj7dxKgLHJMg32cPKlbQA3KYOZ+w=
+  app: lit-temple-39398
+  on:
+    repo: hzba000/trick-server
